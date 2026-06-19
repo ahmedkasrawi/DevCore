@@ -1,0 +1,549 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevCore | Software & Web Development</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--#region settings box-->
+    <div class="settings-box">
+      <div class="toggle-settings">
+        <i class="gear fa fa-gear"></i>
+      </div>
+      <h2 class="setting-heading">Settings</h2>
+      <div class="settings-container">
+        <div class="option-box">
+          <h4>Colors</h4>
+          <ul class="colors">
+            <li data-color="#00d5ff" class="active"></li>
+            <li data-color="#e91e63"></li>
+            <li data-color="#009688"></li>
+            <li data-color="#ff9800"></li>
+            <li data-color="#4caf50"></li>
+          </ul>
+        </div>
+        <div class="option-box">
+          <h4>Show Bullets</h4>
+          <div class="bullets-option">
+            <span class="yes active" data-display="show">Yes</span>
+            <span class="no" data-display="hide">No</span>
+          </div>
+        </div>
+        <div class="option-box">
+          <label>
+            <h4 class="span">Dark Mode</h4>
+            <input type="checkbox" class="toggle-checkbox" name="" />
+            <div class="toggle-switch"></div>
+          </label>
+        </div>
+        <button class="reset-options">Reset Options</button>
+      </div>
+    </div>
+    <!--#endregion settings box -->
+
+    <!-- #region Nav Bullets -->
+    <div class="nav-bullets">
+      <div class="bullet" data-section=".about-us">
+        <div class="tooltip">About Us</div>
+      </div>
+      <div class="bullet" data-section=".skills-page">
+        <div class="tooltip">Our Skills</div>
+      </div>
+      <div class="bullet" data-section=".gallery">
+        <div class="tooltip">Our Projects</div>
+      </div>
+      <div class="bullet" data-section=".timeline">
+        <div class="tooltip">Our Journey</div>
+      </div>
+      <div class="bullet" data-section=".testimonials">
+        <div class="tooltip">Testimonials</div>
+      </div>
+    </div>
+    <!-- #endregion Nav Bullets -->
+
+    <!--#region start landing page -->
+    <div class="landing-page" id="home">
+      <div class="overlay"></div>
+      <header class="header-area">
+        <div class="logo">DevCore</div>
+        <div class="links-container">
+          <button class="toggle-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul class="links">
+            <li><a href="#" data-section=".aboutUs">About</a></li>
+            <li><a href="#" data-section=".skills-page">Skills</a></li>
+            <li><a href="#" data-section=".gallery">Projects</a></li>
+            <li><a href="#" data-section=".timeline">Journey</a></li>
+            <li><a href="#" data-section=".feature">Services</a></li>
+            <li><a href="#" data-section=".testimonials">Testimonials</a></li>
+            <li><a href="#" data-section=".contact">Contact</a></li>
+          </ul>
+        </div>
+      </header>
+      <div class="container">
+        <div class="introduction">
+          <h1>We Build <span>Software</span> That Drives Growth</h1>
+          <p>
+            We design and develop custom web applications, mobile solutions, and
+            scalable software — turning your ideas into reliable products that
+            deliver real business results.
+          </p>
+        </div>
+      </div>
+      <div id="topAnchor"></div>
+      <button id="scrollToTioBtn" class="scroll-btn" aria-label="going to top">
+        <i class="fa-solid fa-rocket"></i>
+      </button>
+    </div>
+
+    <!--#endregion start landing page -->
+
+    <!--#region start About Us -->
+    <div class="container">
+      <section class="about-us" id="aboutUs">
+        <div class="info-box">
+          <h2>About Us</h2>
+          <p>
+            DevCore is a software development company specializing in custom web
+            applications, mobile apps, and enterprise solutions. Our team of
+            experienced engineers and designers partners with startups and
+            businesses to build secure, high-performance products — from initial
+            concept and UI/UX design to deployment and long-term support.
+          </p>
+        </div>
+        <div class="image-box">
+          <img src="images/about_us_3.png" alt="" />
+        </div>
+      </section>
+    </div>
+
+    <!--#endregion end About Us -->
+
+    <!-- #region Our Skills -->
+
+    <div class="skills-page" id="skills">
+      <div class="container">
+        <h2>Our Expertise</h2>
+        <p class="skills-subtitle">
+          Full-stack capabilities that power modern digital products from idea
+          to launch
+        </p>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fa-solid fa-laptop-code"></i>
+            </div>
+            <h3>Frontend Development</h3>
+            <p>
+              Pixel-perfect, responsive interfaces built with modern frameworks
+              for seamless user experiences.
+            </p>
+            <ul class="skill-tags">
+              <li>React</li>
+              <li>Vue.js</li>
+              <li>TypeScript</li>
+              <li>Tailwind CSS</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fa-solid fa-server"></i></div>
+            <h3>Backend Development</h3>
+            <p>
+              Robust server-side architecture, RESTful APIs, and database design
+              for scalable applications.
+            </p>
+            <ul class="skill-tags">
+              <li>Node.js</li>
+              <li>PHP</li>
+              <li>Python</li>
+              <li>REST APIs</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fa-solid fa-mobile-screen"></i>
+            </div>
+            <h3>Mobile Development</h3>
+            <p>
+              Cross-platform and native mobile apps that perform flawlessly on
+              iOS and Android devices.
+            </p>
+            <ul class="skill-tags">
+              <li>React Native</li>
+              <li>Flutter</li>
+              <li>iOS</li>
+              <li>Android</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fa-solid fa-cloud"></i></div>
+            <h3>Cloud & DevOps</h3>
+            <p>
+              Cloud infrastructure, automated deployment pipelines, and
+              containerized environments.
+            </p>
+            <ul class="skill-tags">
+              <li>AWS</li>
+              <li>Docker</li>
+              <li>CI/CD</li>
+              <li>Linux</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fa-solid fa-palette"></i></div>
+            <h3>UI/UX Design</h3>
+            <p>
+              User-centered design from wireframes to interactive prototypes and
+              complete design systems.
+            </p>
+            <ul class="skill-tags">
+              <li>Figma</li>
+              <li>Prototyping</li>
+              <li>Wireframe</li>
+              <li>Design Systems</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <h3>Quality & Security</h3>
+            <p>
+              Automated testing, code reviews, and security best practices for
+              reliable software delivery.
+            </p>
+            <ul class="skill-tags">
+              <li>Testing</li>
+              <li>Git</li>
+              <li>SSL</li>
+              <li>Performance</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- #endregion Our Skills -->
+
+    <!-- #region Our Gallery -->
+    <div class="gallery" id="gallery">
+      <div class="container">
+        <h2>Our Projects</h2>
+        <p class="gallery-subtitle">
+          Selected projects showcasing our expertise in web development and
+          software engineering
+        </p>
+        <div class="images-box">
+          <div class="gallery-item">
+            <img src="images/card8.avif" alt="UI/UX design" loading="lazy" />
+            <div class="gallery-caption">
+              <span>Web App</span>
+              <h4>UI/UX design</h4>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/card2.webp" alt="UI/UX design" loading="lazy" />
+            <div class="gallery-caption">
+              <span>Web Design</span>
+              <h4>UI/UX design</h4>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/card4e.webp"
+              alt="Creative Landing"
+              loading="lazy"
+            />
+            <div class="gallery-caption">
+              <span>Web Design</span>
+              <h4>E-Commerce Platform</h4>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/card7.webp" alt="landing page" loading="lazy" />
+            <div class="gallery-caption">
+              <span>web application</span>
+              <h4>landing page</h4>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/card1.webp" alt=" ui/ux" loading="lazy" />
+            <div class="gallery-caption">
+              <span>web App</span>
+              <h4>ui/ux Application</h4>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/card3.webp" alt="Visual Identity" loading="lazy" />
+            <div class="gallery-caption">
+              <span>Web Design</span>
+              <h4>Startup Landing Page</h4>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/card4e.webp"
+              alt="E-Commerce Site"
+              loading="lazy"
+            />
+            <div class="gallery-caption">
+              <span>Web Design</span>
+              <h4>Real Estate Platform</h4>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/card6.avif" alt="Agency Website" loading="lazy" />
+            <div class="gallery-caption">
+              <span>Web Design</span>
+              <h4>Corporate Website</h4>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/card8.avif" alt="Startup Launch" loading="lazy" />
+            <div class="gallery-caption">
+              <span>Software</span>
+              <h4>web System</h4>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/card2.webp"
+              alt="Corporate Portal"
+              loading="lazy"
+            />
+            <div class="gallery-caption">
+              <span>Software</span>
+              <h4>ERP Solution</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- #endregion Our Gallery -->
+
+    <!-- #region Timeline -->
+    <div class="timeline" id="timeline">
+      <div class="container">
+        <h2>Our Journey</h2>
+        <div class="timeline-content">
+          <div class="year">2023</div>
+          <div class="left">
+            <div class="content">
+              <h3>Expanded Development Team</h3>
+              <p>
+                Grew our engineering team to 20+ specialists, adding expertise
+                in React, Node.js, and cloud-native architecture.
+              </p>
+            </div>
+          </div>
+          <div class="right">
+            <div class="content">
+              <h3>Enterprise Cloud Solutions</h3>
+              <p>
+                Launched our cloud infrastructure division, enabling clients to
+                deploy scalable applications with 99.9% uptime guarantee.
+              </p>
+            </div>
+          </div>
+          <div class="year">2022</div>
+          <div class="left">
+            <div class="content">
+              <h3>DevCore Was Founded</h3>
+              <p>
+                Started as a small team with a mission to deliver high-quality
+                software solutions for businesses of all sizes.
+              </p>
+            </div>
+          </div>
+          <div class="left">
+            <div class="content">
+              <h3>50+ Projects Delivered</h3>
+              <p>
+                Reached a major milestone by successfully launching over 50 web
+                and mobile projects for clients across 10 countries.
+              </p>
+            </div>
+          </div>
+          <div class="right">
+            <div class="content">
+              <h3>Mobile Division Launch</h3>
+              <p>
+                Opened our mobile development unit, building native and
+                cross-platform apps for iOS and Android platforms.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- #endregion Timeline -->
+
+    <!-- #region Feature -->
+    <div class="feature" id="feature">
+      <h2>Our Services</h2>
+      <p class="feature-subtitle">
+        End-to-end software services designed to accelerate your digital
+        transformation
+      </p>
+      <div class="container">
+        <div class="feat-box">
+          <img
+            src="images/course-01.jpg"
+            alt="web development"
+            loading="lazy"
+          />
+          <h4>Web Development</h4>
+          <p>
+            Custom websites and web applications built with modern frameworks,
+            optimized for performance, security, and seamless user experience
+            across all devices.
+          </p>
+        </div>
+        <div class="feat-box">
+          <img src="images/course-02.jpg" alt="mobile apps" loading="lazy" />
+          <h4>Mobile Apps</h4>
+          <p>
+            Native and cross-platform mobile applications that engage users and
+            integrate seamlessly with your existing business systems and
+            workflows.
+          </p>
+        </div>
+        <div class="feat-box">
+          <img src="images/course-03.jpg" alt="UI/UX design" loading="lazy" />
+          <h4>UI/UX Design</h4>
+          <p>
+            User-centered interfaces that combine clean aesthetics with
+            intuitive navigation to boost conversion rates and customer
+            retention.
+          </p>
+        </div>
+        <div class="feat-box">
+          <img
+            src="images/course-01.jpg"
+            alt="custom software"
+            loading="lazy"
+          />
+          <h4>Custom Software</h4>
+          <p>
+            Tailored enterprise solutions including CRM, ERP, and automation
+            tools built to your exact business requirements and specifications.
+          </p>
+        </div>
+        <div class="feat-box">
+          <img src="images/course-02.jpg" alt="cloud & devops" loading="lazy" />
+          <h4>Cloud & DevOps</h4>
+          <p>
+            Scalable cloud infrastructure, CI/CD pipelines, and deployment
+            strategies for reliable, always-on applications that grow with your
+            business.
+          </p>
+        </div>
+        <div class="feat-box">
+          <img
+            src="images/course-03.jpg"
+            alt="maintenance & support"
+            loading="lazy"
+          />
+          <h4>Maintenance & Support</h4>
+          <p>
+            Ongoing updates, performance monitoring, and dedicated technical
+            support to keep your software running at peak efficiency around the
+            clock.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- #endregion Feature -->
+
+    <!-- #region Testimonials -->
+    <div class="testimonials" id="testimonials">
+      <div class="container">
+        <h2>Testimonials</h2>
+        <p class="testimonials-subtitle">
+          Trusted by businesses worldwide — hear from our satisfied clients
+        </p>
+        <div class="box">
+          <div class="person-info">
+            <img src="images/female.svg" alt="Sarah Mitchell" />
+            <div class="info">
+              <h4>Sarah Mitchell</h4>
+              <p>CTO at TechFlow Inc.</p>
+            </div>
+          </div>
+
+          <p>
+            DevCore delivered our SaaS platform ahead of schedule with clean,
+            maintainable code and excellent communication throughout every stage
+            of the project.
+          </p>
+        </div>
+        <div class="box">
+          <div class="person-info">
+            <img src="images/male.svg" alt="James Carter" />
+            <div class="info">
+              <h4>James Carter</h4>
+              <p>Founder at StartupLab</p>
+            </div>
+          </div>
+          <p>
+            Our e-commerce conversion rate increased by 40% after DevCore
+            redesigned and rebuilt our entire platform. Truly outstanding work
+            from a dedicated team.
+          </p>
+        </div>
+        <div class="box">
+          <div class="person-info">
+            <img src="images/female.svg" alt="Fatima Al-Rashid" />
+            <div class="info">
+              <h4>Fatima Al-Rashid</h4>
+              <p>Product Manager at MedCare</p>
+            </div>
+          </div>
+          <p>
+            The mobile app they developed exceeded all our expectations —
+            stable, fast, and loved by our users. DevCore is our go-to partner
+            for every software project.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- #endregion Testimonials -->
+
+    <!-- #region Contact Us -->
+    <div class="contact">
+      <div class="overlay"></div>
+      <div class="container">
+        <h2>Contact Us</h2>
+        <form action="">
+          <div class="left">
+            <input type="text" placeholder="Your Name" name="user" />
+            <input type="text" placeholder="Your Phone" name="phone" />
+            <input type="email" placeholder="Your Email" name="email" />
+            <input type="text" placeholder="Subject" name="subject" />
+          </div>
+          <div class="right">
+            <textarea name="massage" placeholder="Your Massage"></textarea>
+            <input type="submit" value="Send" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- #endregion Contact Us -->
+    <footer>DevCore — Building Software That Matters</footer>
+    <script src="js/functions.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
