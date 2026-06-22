@@ -1,4 +1,14 @@
-//#region gear settings
+//#toggle menu
+toggleMenu.onclick = () => {
+  headerLinks.classList.toggle("active");
+  aLinks.forEach((a) => {
+    a.onclick = () => {
+      headerLinks.classList.remove("active");
+    };
+  });
+
+};
+// gear appearing
 gear.onclick = () => {
   settingsBox.classList.toggle("appear");
   gear.children[0].classList.toggle("fa-spin");
@@ -51,13 +61,7 @@ document.querySelector(".reset-options").onclick = function () {
   window.location.reload();
 };
 
-
 //#endregion gear settings
-
-
-
-
-
 
 //#region Our Skills
 const skillsPage = document.querySelectorAll(".skills-page .skill-card");
@@ -127,7 +131,7 @@ const topAnchor = document.getElementById("topAnchor");
 const scrollBtn = document.getElementById("scrollToTioBtn");
 
 const btnObserver = new IntersectionObserver((entries) => {
-  if (!entries[0].isIntersecting) { 
+  if (!entries[0].isIntersecting) {
     scrollBtn.classList.add("show");
   } else {
     scrollBtn.classList.remove("show");

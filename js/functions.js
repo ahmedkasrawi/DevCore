@@ -11,6 +11,8 @@ let bulletLocal = localStorage.getItem("bullets-option");
 //#region landing page
 let toggleMenu = document.querySelector(".landing-page .toggle-menu");
 let headerLinks = document.querySelector(".landing-page .links");
+let aLinks = document.querySelectorAll(".landing-page .links a");
+
 // background
 let landingPage = document.querySelector(".landing-page");
 let backOption = localStorage.getItem("backOption");
